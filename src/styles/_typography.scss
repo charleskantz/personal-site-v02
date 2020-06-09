@@ -1,0 +1,39 @@
+// Source Code Bold
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
+// Source Code Regular
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+font {
+  font-family: 'Source Code Pro', monospace;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  @extend font;
+  font-weight: bold;
+}
+
+h4, h5, h6, .h4, .h5, .h6 {
+  @extend font;
+  font-weight: normal !important;
+}
+
+
+.nav-link {
+  // React-Scroll's Link does not display pointer
+  cursor: pointer;
+  @extend font;
+  font-weight: normal;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+  color: #CCD6F6 !important;
+}
+
+p {
+  font-family: 'Source Sans Pro', serif;
+  line-height: 1.7rem;
+  letter-spacing: .02rem;
+}
+
+@import "~bootstrap/scss/bootstrap.scss";

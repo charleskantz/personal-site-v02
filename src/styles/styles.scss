@@ -1,3 +1,16 @@
+@import '_typography.scss';
+@import '_layout.scss';
+@import '_customBS.scss';
+
+$theme-colors: (
+  "primary": #EB6E64
+);
+$primaryColor: #EB6E64;
+
+html {
+  background-color: rgb(12, 20, 42);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +18,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@import "~bootstrap/scss/bootstrap.scss";
+
