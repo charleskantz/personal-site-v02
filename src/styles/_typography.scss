@@ -5,17 +5,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
-font {
+codeFont {
   font-family: 'Source Code Pro', monospace;
+  color: white;
+}
+
+sansFont {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: lightblue;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  @extend font;
-  font-weight: bold;
+  @extend codeFont;
+  font-weight: bold !important;
 }
 
 h4, h5, h6, .h4, .h5, .h6 {
-  @extend font;
+  @extend codeFont;
   font-weight: normal !important;
 }
 
@@ -23,17 +29,25 @@ h4, h5, h6, .h4, .h5, .h6 {
 .nav-link {
   // React-Scroll's Link does not display pointer
   cursor: pointer;
-  @extend font;
+  @extend codeFont;
   font-weight: normal;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
   color: #CCD6F6 !important;
+  &:hover {
+    color: white !important;
+  }
 }
 
 p {
-  font-family: 'Source Sans Pro', serif;
+  @extend sansFont;
   line-height: 1.7rem;
   letter-spacing: .02rem;
+}
+
+li {
+  @extend p;
+  margin-bottom: .75rem !important;
 }
 
 @import "~bootstrap/scss/bootstrap.scss";

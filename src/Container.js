@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './Navbar.js'
+import Navigation from './Navigation.js'
 import Home from './Home.js'
 import About from './About.js'
 import Experience from './Experience.js'
@@ -9,7 +9,7 @@ import Contact from './Contact.js'
 function Container() {
   return (
     <div className="container">
-      <Navbar />
+      <Navigation />
       <Home />
       <About />
       <Work />

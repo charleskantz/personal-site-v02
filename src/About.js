@@ -1,25 +1,34 @@
 import React from 'react';
 import selfie from './images/ckantz_portrait_sm.jpg';
+import {
+  Container,
+  Row,
+  Col,
+  Image
+} from 'react-bootstrap';
 
 function About() {
   return (
-    <div id="about" className="sectionContainer container">
-      <div className="row">
-        <div className="col-12 col-md-5 col-lg-4 offset-lg-1">
-          <div className="selfPortrait">
-            <img src={selfie} class="img-fluid" alt="portrait of Charles Kantz" />
-          </div>
-        </div>
-        <div className="col-12 col-md-7 col-lg-6">
-          <h2>About Charles</h2>
+    <Container id="about" className="sectionContainer">
+      <Row>
+        <Col
+          xs={{ span: 8, offset: 2 }}
+          md={{ span: 5, offset: 0}}
+          lg={{ span: 4, offset: 1 }}
+          className="mb-4"
+        >
+          <Image src={selfie} fluid rounded />
+        </Col>
+        <Col md={7} lg={6} >
+        <h2>About Charles</h2>
           <p>
             As a former designer of 12 years I have occasionally dipped
             my toes into coding for my projects. It wasn't until designing
             and implementing a fully working VR experience that I realized
             how much I enjoyed software development, even more than design.
             I took that as a sign and left my job to pursue this new love.
-            I am now currently enrolled in the Rithm School where I will
-            hone my skills and complete my transition to development!
+            I enrolled in the Rithm School where I honed my developer skills
+            and completed my transition to web development!
           </p>
           <p>
             Outside of my career, I have spent most of my life in the Bay
@@ -28,9 +37,9 @@ function About() {
             enjoying sci-fi, photography, video games, baking bread, and
             the company of friends.
           </p>
-        </div>
-      </div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
   )
 }
 
