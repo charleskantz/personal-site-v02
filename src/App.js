@@ -1,10 +1,11 @@
 import React from 'react';
 import Container from './Container.js'
-import { scrollThere }  from './utils/scrollHelper.js';
+import Navigation from './Navigation.js'
 
 function App() {
   return (
     <div className="appContainer">
+      <Navigation />
       <Container />
     </div>
   );

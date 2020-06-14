@@ -2,11 +2,6 @@
 @import '_layout.scss';
 @import '_customBS.scss';
 
-$theme-colors: (
-  "primary": #EB6E64
-);
-$primaryColor: #EB6E64;
-
 html {
   background-color: rgb(12, 20, 42);
 }
@@ -19,4 +14,5 @@ body {
 }
 
 @import "~bootstrap/scss/bootstrap.scss";
+@import "~@fortawesome/fontawesome-pro/css/all.css";
 

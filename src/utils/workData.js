@@ -66,48 +66,65 @@ const workHistory = [
 
 ]
 
-const singleJobData = {
-  featured: false,
-  title: "",
-  company: "",
-  tech: [""],
-  img_link: "",
-  gh_link: "",
-  demo_link: "",
-  description: ""
-};
+// const singleJobData = {
+//   featured: false,
+//   title: "",
+//   company: "",
+//   tech: [""],
+//   img_link: "",
+//   gh_link: "",
+//   demo_link: "",
+//   description: ""
+// };
 
 const jobData = [
   {
     featured: true,
-    title: "Neutral Blog",
+    title: "Average Blog",
     company: "Rithm School",
-    tech: ["Javascript","React", "Redux", "Express"],
-    img_link: "",
-    gh_link: "",
-    demo_link: "",
-    description: "A Medium-like blog where you can create posts, delete posts, leave comments, and delete comments. Uses Redux for state "
+    tech: ["Javascript", "React", "Redux", "Express"],
+    img_link: "https://imgur.com/ZxuhIDV.jpg",
+    img_align: "center",
+    gh_link: "https://github.com/charleskantz/redux-microblog",
+    demo_link: "https://cocky-villani-ed165a.netlify.app/",
+    description: "A Medium-like blog where you can create posts, delete posts, leave comments, and delete comments. Uses Redux for state management and local caching of visited blog posts. The backend is a Node Express server."
   },
   {
-    featured: true,
+    featured: false,
     title: "Rap Libs",
     company: "Rithm School",
-    tech: ["Javascript","React"],
+    tech: ["Javascript", "React"],
     img_link: "",
-    gh_link: "",
-    demo_link: "",
-    description: ""
+    img_align: "center",
+    gh_link: "https://github.com/charleskantz/jeopardy-game",
+    demo_link: "http://ck-jeopardy.surge.sh/",
+    description: "Rap Libs is like a mad lib, but it's for a rap song. A simple React-based app where you submit words for a mad lib and see your selected song with your words."
   },
   {
     featured: false,
     title: "Jeopardy",
     company: "Rithm School",
-    tech: ["Javascript","jQuery", "jService API"],
-    img_link: "",
-    gh_link: "",
-    demo_link: "",
-    description: "A fun Jeopardy-like trivia game, and one of my first Javascript projects. Click on a question mark to reveal a question, then click again to see the answer. Hit the 'Restart' button to get new categories and questions (which are provided by jService API)."
+    tech: ["Javascript", "jQuery"],
+    img_link: "https://imgur.com/slvknIi.jpg",
+    img_align: "center",
+    gh_link: "https://github.com/charleskantz/jeopardy-game",
+    demo_link: "http://ck-jeopardy.surge.sh/",
+    description: "A fun Jeopardy-like trivia game, and one of my first Javascript projects. Click on a question mark to reveal a question, then click again to see the answer. Hit the 'Restart' button to get new categories and questions."
+  },
+  {
+    featured: true,
+    title: "Warbler",
+    company: "Rithm School",
+    tech: ["Python", "Flask", "Jinja", "Bcrypt", "SQLAlchemy"],
+    img_link: "https://imgur.com/OlFoqmQ.jpg",
+    img_align: "center",
+    gh_link: "https://github.com/charleskantz/Warbler",
+    demo_link: "https://warblers-be-warbling.herokuapp.com/",
+    description: "A Twitter-like social media experience built on a static page server. Uses Bcrypt for authentication and SQLAlchemy for database management. Runs off a Flask server using Jinja for template-based page rendering."
   },
 ];
 
-export default workHistory;
+export {
+  workHistory,
+  jobData
+};

@@ -1,6 +1,15 @@
-body {
-  background: rgb(29,35,51);
-  background: linear-gradient(0deg, rgba(29,35,51,1) 0%, rgba(17,23,35,1) 100%);
+$bgColor: #171A27;
+$cardColor: #2C3140;
+
+#root {
+  background-color: $bgColor;
+}
+
+.navBar {
+  height: 80px;
+  background-color: transparentize($color: $bgColor, $amount: 0);
+  box-shadow: 0px 3px 5px rgba($color: #000000, $alpha: .1);
+  // backdrop-filter: blur(6px);
 }
 
 .sectionContainer {
@@ -11,20 +20,36 @@ body {
   align-items: center;
 }
 
-.navFade {
-  height: 120px;
-  background: rgb(29,35,51);
-  background: linear-gradient(180deg, rgba(17,23,35,1) 0%, rgba(17,23,35,0) 100%);
-  position: absolute;
-  z-index: -100;
-  top: 0;
-  left: 0;
-  right: 0;
+.workContainer {
+  padding: 2rem;
+  border-radius: 2px;
+  background-color: $cardColor;
+  box-shadow: 0px 0px 20px rgba($color: #000000, $alpha: .1);
 }
 
-.workContainer {
-  padding: 1rem;
-  border: 1px solid rgb(69, 83, 121);
-  border-radius: 12px;
-  background-color: darken($color: rgb(29,35,51), $amount: 3);
+/* ~~ Project Card Layout ~~ */
+
+.projectListContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projectContainer.card {
+  background-color: $cardColor;
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.projectDetails {
+  display: flex;
+  align-items: center;
+}
+
+.projectImage {
+  height: 300px;
+  background-position: left;
+  background-size: cover;
+  background-color: $secondaryColor;
+
 }

@@ -1,3 +1,5 @@
+@import './colors.scss';
+
 // Source Code Bold
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
 // Source Code Regular
@@ -12,7 +14,7 @@ codeFont {
 
 sansFont {
   font-family: 'Source Sans Pro', sans-serif;
-  color: lightblue;
+  color: $lightGray;
 }
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -37,6 +39,10 @@ h4, h5, h6, .h4, .h5, .h6 {
   &:hover {
     color: white !important;
   }
+  &:active {
+    color: white !important;
+    border-left: 1px solid $primaryColor !important;
+  }
 }
 
 p {
@@ -49,5 +55,37 @@ li {
   @extend p;
   margin-bottom: .75rem !important;
 }
+
+/* ~~ Project Card Typography */
+
+.projectTech {
+  @extend codeFont;
+  color: $secondaryColor;
+  font-size: .85rem;
+  &:hover {
+    color: darken($color: $secondaryColor, $amount: 5%)
+  }
+}
+
+.projectTechSep {
+  @extend .projectTech;
+  color: $graySeparator;
+  &:hover {
+    color: $graySeparator;
+  }
+}
+
+.projectFeatured {
+  @extend codeFont;
+  color: $primaryColor;
+  font-size: .85rem;
+  margin-bottom: .5rem;
+}
+
+.demoLinkIcon {
+  color: $primaryColor;
+}
+
+
 
 @import "~bootstrap/scss/bootstrap.scss";

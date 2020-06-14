@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import * as Scroll from 'react-scroll';
 import {
   Navbar,
-  Collapse,
   Nav,
   NavItem,
 } from 'react-bootstrap';
@@ -17,7 +16,7 @@ let DELAY = 0;
 function Navigation() {
   return (
     <>
-    <Navbar collapseOnSelect className="py-4 sticky-top navFade" variant="dark" expand="md">
+    <Navbar collapseOnSelect className="py-4 sticky-top navBar col-md-10 offset-md-1" variant="dark" expand="md">
       <Navbar.Brand href="#home">Charles Kantz</Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
