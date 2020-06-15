@@ -6,6 +6,7 @@ import {
   Col,
   Image
 } from 'react-bootstrap';
+import Fade from 'react-reveal/Fade';
 
 function About() {
   return (
@@ -17,10 +18,15 @@ function About() {
           lg={{ span: 4, offset: 1 }}
           className="mb-4"
         >
-          <Image src={selfie} fluid rounded />
+          <Fade left>
+            <Image src={selfie} fluid rounded className="aboutImage"/>
+          </Fade>
         </Col>
+
         <Col md={7} lg={6} >
+        <Fade bottom>
         <h2>About Charles</h2>
+        <div className="aboutRule"></div>
           <p>
             As a former designer of 12 years I have occasionally dipped
             my toes into coding for my projects. It wasn't until designing
@@ -37,6 +43,7 @@ function About() {
             enjoying sci-fi, photography, video games, baking bread, and
             the company of friends.
           </p>
+          </Fade>
         </Col>
       </Row>
     </Container>

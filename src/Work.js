@@ -1,11 +1,10 @@
 import React from 'react';
 import WorkFeaturedList from './WorkFeaturedList.js';
 import WorkProjectList from './WorkProjectList.js';
+import DesignCtaBanner from './DesignCtaBanner.js';
+import Fade from 'react-reveal/Fade';
 
 function Work({ jobData }) {
-
-  console.log("~~jobData~~", jobData);
-
 
   const generateLists = jobData => {
     let featuredList = [];
@@ -18,8 +17,13 @@ function Work({ jobData }) {
     return (
       <>
         <WorkFeaturedList jobData={featuredList} />
-        <h3 className="text-center">Other notable projects</h3>
-        <WorkProjectList jobData={normalList} />
+        <h3 className=" my-5 text-center">Other notable projects</h3>
+        <Fade bottom>
+          <DesignCtaBanner />
+        </Fade>
+        <Fade bottom>
+          <WorkProjectList jobData={normalList} />
+        </Fade>
       </>
     )
   }
@@ -27,7 +31,8 @@ function Work({ jobData }) {
   return (
     <div className="sectionContainer" id="work">
       <div>
-        <h1 className="text-center">Work!</h1>
+        <h1 className="text-center">Some Projects of Mine</h1>
+        <div className="aboutRule mx-auto mt-3 mb-5"></div>
         {generateLists(jobData)}
       </div>
     </div>

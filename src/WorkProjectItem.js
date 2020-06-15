@@ -8,7 +8,7 @@ function WorkProjectItem({ title, company, description, tech, gh_link, demo_link
 
 
   return (
-  <Card className="projectContainer col-lg-5 offset-lg-2 col-md-9 col-sm-12">
+  <Card className="projectContainer col-lg-5 offset-lg-2 col-md-9 col-sm-12 m-3">
     <Row>
       <Col>
       <h3>{title}</h3>

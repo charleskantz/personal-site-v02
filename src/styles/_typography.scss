@@ -1,25 +1,40 @@
 @import './colors.scss';
 
-// Source Code Bold
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
-// Source Code Regular
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+// Adobe
+@import url("https://use.typekit.net/uzb7khd.css");
+
+
+
+// // Source Code Bold
+// @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
+// // Source Code Regular
+// @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 codeFont {
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'input-mono', monospace;
+  font-style: normal;
+  font-weight: 400;
   color: white;
 }
 
 sansFont {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'bilo', sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: $lightGray;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  @extend codeFont;
-  font-weight: bold !important;
+primaryLinkHover {
+  color: lighten($color: $primaryColor, $amount: 15%);
+  text-decoration: none;
+}
+
+h1, h2, h3, .h1, .h2, .h3 {
+  font-family: 'bilo', sans-serif;
+  font-weight: 700 !important;
+  font-style: normal;
 }
 
 h4, h5, h6, .h4, .h5, .h6 {
@@ -27,6 +42,14 @@ h4, h5, h6, .h4, .h5, .h6 {
   font-weight: normal !important;
 }
 
+/* ~~ Navigation ~~ */
+
+.navbar-brand {
+  @extend codeFont;
+  font-weight: 700 !important;
+  font-style: normal;
+  cursor: pointer;
+}
 
 .nav-link {
   // React-Scroll's Link does not display pointer
@@ -39,10 +62,6 @@ h4, h5, h6, .h4, .h5, .h6 {
   &:hover {
     color: white !important;
   }
-  &:active {
-    color: white !important;
-    border-left: 1px solid $primaryColor !important;
-  }
 }
 
 p {
@@ -51,13 +70,66 @@ p {
   letter-spacing: .02rem;
 }
 
+/* ~~ Home Section ~~ */
+
+.homeHeroHello {
+  @extend codeFont;
+  font-weight: 700;
+  color: $secondaryColor;
+  letter-spacing: .25px;
+}
+
+.homeHeroName {
+  @extend sansFont;
+  font-size: 90px;
+  font-weight: 700;
+  font-kerning: none;
+  letter-spacing: -.5px;
+  color: white;
+  line-height: 80px;
+  margin: 1rem 0;
+}
+
+.homeHeroTagline {
+  @extend codeFont;
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: $primaryColor;
+}
+
+/* ~~ Experience ~~ */
+
+// work section
+.workRole {
+  @extend sansFont;
+  color: $secondaryColor;
+  margin-top: 1.5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.workPosition {
+  color: $tertiaryColor;
+}
+
+// bullets
 li {
   @extend p;
   margin-bottom: .75rem !important;
 }
 
+// skill subheads
+.workSkills p strong {
+  color: white;
+}
+
 /* ~~ Project Card Typography */
 
+// technologies listed on each project
 .projectTech {
   @extend codeFont;
   color: $secondaryColor;
@@ -67,14 +139,14 @@ li {
   }
 }
 
+// technology list separator
 .projectTechSep {
   @extend .projectTech;
   color: $graySeparator;
-  &:hover {
-    color: $graySeparator;
-  }
+  margin: 0 4px;
 }
 
+// 'featured project' line
 .projectFeatured {
   @extend codeFont;
   color: $primaryColor;
@@ -82,10 +154,69 @@ li {
   margin-bottom: .5rem;
 }
 
-.demoLinkIcon {
+
+.projectLinks {
+  @extend codeFont;
   color: $primaryColor;
+  font-weight: 700;
+  // project demo and GH links
+  .iconLinks {
+    margin-right: 2px;
+    .fa-secondary {
+      color: $secondaryColor;
+      opacity: 1;
+    }
+  }
+  a:hover {
+    @extend primaryLinkHover;
+  }
 }
 
+.projectDesignBanner {
+  .h6 {
+    font-size: .8rem;
+  }
+  .projectDesignLink {
+    @extend codeFont;
+    @extend h6;
+    font-weight: 700 !important;
+    a:hover {
+      @extend primaryLinkHover;
+    }
+  }
+  .fa-primary {
+    color: $tertiaryColor;
+  }
+  .fa-secondary {
+    color: $secondaryColor;
+    opacity: .8;
+  }
+}
 
+.contactSocials {
+  a {
+    margin: .5rem;
+    &:hover {
+      @extend primaryLinkHover;
+    }
+  }
+}
 
-@import "~bootstrap/scss/bootstrap.scss";
+.emailBtn {
+  @extend codeFont;
+  background-color: transparentize($color: $secondaryColor, $amount: 1);
+  border: 2px solid $secondaryColor !important;
+  border-radius: 4px;
+  padding: 1.25rem 1.25rem 1.15rem;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+
+  &:hover {
+    background-color: transparentize($color: $secondaryColor, $amount: .85);
+  }
+
+  .fa-envelope {
+    margin-right: 1rem;
+    color: $primaryColor;
+  }
+}

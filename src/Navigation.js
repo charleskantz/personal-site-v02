@@ -4,6 +4,7 @@ import {
   Navbar,
   Nav,
   NavItem,
+  Container,
 } from 'react-bootstrap';
 
 let Link = Scroll.Link;
@@ -15,47 +16,76 @@ let DELAY = 0;
 
 function Navigation() {
   return (
-    <>
-    <Navbar collapseOnSelect className="py-4 sticky-top navBar col-md-10 offset-md-1" variant="dark" expand="md">
-      <Navbar.Brand href="#home">Charles Kantz</Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="ml-auto">
-          <NavItem>
-            <Link
-              className="nav-link"
-              delay={DELAY}
-              smooth={SMOOTH}
-              duration={DURATION}
-              to="home"
-            >
-              Home
-            </Link>
-          </NavItem>
-          <NavItem>
-            <Link className="nav-link" delay={DELAY} smooth={SMOOTH} duration={DURATION} to="about">
-              About
-            </Link>
-          </NavItem>
-          <NavItem>
-          <Link className="nav-link" delay={DELAY} smooth={SMOOTH} duration={DURATION} to="work">
-            Work
+    <div className="sticky-top navBar pt-3">
+      <Navbar collapseOnSelect variant="dark" expand="md">
+        <Container>
+          <Link
+            className="navbar-brand"
+            delay={DELAY}
+            smooth={SMOOTH}
+            duration={DURATION}
+            to="root"
+            isDynamic={true}
+          >
+            Charles Kantz
           </Link>
-          </NavItem>
-          <NavItem>
-          <Link className="nav-link" delay={DELAY} smooth={SMOOTH} duration={DURATION} to="experience">
-            Experience
-          </Link>
-          </NavItem>
-          <NavItem>
-          <Link className="nav-link btn btn-outline-primary ml-2" delay={DELAY} smooth={SMOOTH} duration={DURATION} to="contact">
-            Contact
-          </Link>
-          </NavItem>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
-    </>
+          {/* <Navbar.Brand href="#home">Charles Kantz</Navbar.Brand> */}
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ml-auto">
+              <NavItem>
+                <Link
+                  className="nav-link"
+                  delay={DELAY}
+                  smooth={SMOOTH}
+                  duration={DURATION}
+                  to="about"
+                  isDynamic={true}
+                >
+                  About
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link
+                  className="nav-link"
+                  delay={DELAY}
+                  smooth={SMOOTH}
+                  duration={DURATION}
+                  to="experience"
+                  isDynamic={true}
+                >
+                  Experience
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link
+                  className="nav-link"
+                  delay={DELAY}
+                  smooth={SMOOTH}
+                  duration={DURATION}
+                  to="work"
+                  isDynamic={true}
+                >
+                  Work
+                </Link>
+              </NavItem>
+              <NavItem>
+                <Link
+                  className="nav-link btn btn-outline-primary ml-2"
+                  delay={DELAY}
+                  smooth={SMOOTH}
+                  duration={DURATION}
+                  to="contact"
+                  isDynamic={true}
+                >
+                  Contact
+                </Link>
+              </NavItem>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </div>
   )
 }
 

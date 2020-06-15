@@ -16,6 +16,7 @@ const workHistory = [
   {
     company: "Livestack",
     label: "livestack",
+    role: "engineering",
     start_date: "May 2020",
     end_date: "June 2020",
     title: "Fullstack Engineer",
@@ -28,6 +29,7 @@ const workHistory = [
   {
     company: "Nuro",
     label: "nuro",
+    role: "design",
     start_date: "August 2016",
     end_date: "August 2019",
     title: "Visual Designer",
@@ -41,6 +43,7 @@ const workHistory = [
   {
     company: "Clearpath",
     label: "clearpath",
+    role: "design",
     start_date: "December 2015",
     end_date: "July 2016",
     title: "Art Director",
@@ -53,6 +56,7 @@ const workHistory = [
   {
     company: "Intuitive Surgical",
     label: "isi",
+    role: "design",
     start_date: "February 2014",
     end_date: "December 2015",
     title: "Senior Visual Designer",

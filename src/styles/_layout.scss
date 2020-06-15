@@ -1,3 +1,7 @@
+@import "~bootstrap/scss/functions.scss";
+@import "~bootstrap/scss/variables.scss";
+@import "~bootstrap/scss/mixins/_breakpoints.scss";
+
 $bgColor: #171A27;
 $cardColor: #2C3140;
 
@@ -9,11 +13,18 @@ $cardColor: #2C3140;
   height: 80px;
   background-color: transparentize($color: $bgColor, $amount: 0);
   box-shadow: 0px 3px 5px rgba($color: #000000, $alpha: .1);
-  // backdrop-filter: blur(6px);
 }
 
+.navbar-collapse.collapse.show {
+  background-color: $bgColor;
+  background-color: transparentize($color: $bgColor, $amount: 0);
+  padding-bottom: 1.5rem;
+}
+
+
+
 .sectionContainer {
-  padding: 200px 0;
+  padding: 100px 0;
   color: white;
   display: flex;
   justify-content: center;
@@ -25,6 +36,18 @@ $cardColor: #2C3140;
   border-radius: 2px;
   background-color: $cardColor;
   box-shadow: 0px 0px 20px rgba($color: #000000, $alpha: .1);
+  margin: 4rem 0;
+}
+
+.aboutRule {
+  border-bottom: 2px solid $tertiaryColor;
+  margin-bottom: 1rem;
+  max-width: 300px;
+}
+
+.aboutImage {
+  box-shadow: -10px 10px 0 transparentize($color: $primaryColor, $amount: .8);
+  border: 4px solid $secondaryColor;
 }
 
 /* ~~ Project Card Layout ~~ */
@@ -38,7 +61,7 @@ $cardColor: #2C3140;
 .projectContainer.card {
   background-color: $cardColor;
   padding: 2rem;
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 .projectDetails {
@@ -51,5 +74,85 @@ $cardColor: #2C3140;
   background-position: left;
   background-size: cover;
   background-color: $secondaryColor;
+  border: 4px solid $secondaryColor;
+  border-radius: .25rem;
+}
 
+/* ~~ Work / Skills ~~ */
+
+// Skills
+
+.workSkills {
+  margin: 2rem 0 0;
+  skillStyle {
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  .workSkillsTech {
+    @extend skillStyle;
+    border-left: 2px solid $primaryColor;
+  }
+  .workSkillsDesign {
+    @extend skillStyle;
+    border-left: 2px solid $secondaryColor;
+  }
+  .workSkillsTools {
+    @extend skillStyle;
+    border-left: 2px solid $tertiaryColor;
+  }
+
+  p {
+    margin-bottom: 7px;
+  }
+
+}
+
+.tab-content {
+  border-left: 2px solid #3E4A60;
+  padding-left: 2rem;
+}
+
+.projectDesignBanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  @extend .workContainer;
+  background-color: darken($color: $bgColor, $amount: 2.5%);
+
+  h6 {
+    margin-top: .6rem;
+  }
+
+  .svg-inline--fa {
+    margin-right: 1rem;
+  }
+
+}
+
+/* ~~~ Contact page ~~~ */
+
+.contactSocials {
+  margin: 1rem 0 3rem;
+}
+
+
+/* ~~~ MEDIA QUERIERS ~~~ */
+
+@include media-breakpoint-down(md) {
+
+  // when featured project image is stacked on card
+  .projectImage {
+    margin-bottom: 1rem;
+  }
+
+  // remove vertical rule from experience card
+  .tab-content {
+    border-left: none;
+    padding-left: 0;
+  }
 }
