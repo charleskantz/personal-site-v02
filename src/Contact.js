@@ -8,7 +8,7 @@ function Contact() {
   return (
     <div id="contact" className="sectionContainer text-center">
       <div>
-        <h1>Hire Me</h1>
+        <h1>Get in Touch</h1>
         <Fade bottom>
           <div className="aboutRule mx-auto mt-3 mb-5"></div>
           <h5>For professional inquiries, please email me!</h5>
@@ -19,7 +19,7 @@ function Contact() {
           >
             <button className="mt-3 emailBtn">
               <FontAwesomeIcon icon={["far", "envelope"]} size="1x" />
-              Email Charles
+              kantz.charles@gmail.com
             </button>
           </a>
         </Fade>

@@ -17,12 +17,12 @@ function Work({ jobData }) {
     return (
       <>
         <WorkFeaturedList jobData={featuredList} />
-        <h3 className=" my-5 text-center">Other notable projects</h3>
-        <Fade bottom>
-          <DesignCtaBanner />
-        </Fade>
+        <h3 className=" my-5 text-center">Other Noteworthy Work</h3>
         <Fade bottom>
           <WorkProjectList jobData={normalList} />
+        </Fade>
+        <Fade bottom>
+          <DesignCtaBanner />
         </Fade>
       </>
     )
@@ -31,7 +31,7 @@ function Work({ jobData }) {
   return (
     <div className="sectionContainer" id="work">
       <div>
-        <h1 className="text-center">Some Projects of Mine</h1>
+        <h1 className="text-center">Featured Work</h1>
         <div className="aboutRule mx-auto mt-3 mb-5"></div>
         {generateLists(jobData)}
       </div>

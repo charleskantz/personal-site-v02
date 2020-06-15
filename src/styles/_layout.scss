@@ -74,8 +74,14 @@ $cardColor: #2C3140;
   background-position: left;
   background-size: cover;
   background-color: $secondaryColor;
-  border: 4px solid $secondaryColor;
+  border: 3px solid $secondaryColor;
   border-radius: .25rem;
+
+  &:hover {
+    background-color: lighten($color: $bgColor, $amount: 35%);
+    background-blend-mode: overlay;
+
+  }
 }
 
 /* ~~ Work / Skills ~~ */
@@ -152,7 +158,9 @@ $cardColor: #2C3140;
 
   // remove vertical rule from experience card
   .tab-content {
+    border-top: 2px solid #3E4A60;
     border-left: none;
     padding-left: 0;
+    padding-top: 2rem;
   }
 }

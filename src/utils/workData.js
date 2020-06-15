@@ -88,7 +88,7 @@ const jobData = [
     company: "Rithm School",
     tech: ["Javascript", "React", "Redux", "Express"],
     img_link: "https://imgur.com/ZxuhIDV.jpg",
-    img_align: "center",
+    img_align: "left",
     gh_link: "https://github.com/charleskantz/redux-microblog",
     demo_link: "https://cocky-villani-ed165a.netlify.app/",
     description: "A Medium-like blog where you can create posts, delete posts, leave comments, and delete comments. Uses Redux for state management and local caching of visited blog posts. The backend is a Node Express server."

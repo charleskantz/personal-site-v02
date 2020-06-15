@@ -112,6 +112,11 @@ p {
   }
 }
 
+.workDates {
+  @extend codeFont;
+  color: $secondaryColor;
+}
+
 .workPosition {
   color: $tertiaryColor;
 }
@@ -204,7 +209,7 @@ li {
 
 .emailBtn {
   @extend codeFont;
-  background-color: transparentize($color: $secondaryColor, $amount: .85);
+  background-color: transparentize($color: $secondaryColor, $amount: 1);
   border: 2px solid $secondaryColor !important;
   border-radius: 4px;
   padding: 1.25rem 1.25rem 1.15rem;
