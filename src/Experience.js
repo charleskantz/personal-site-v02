@@ -42,7 +42,18 @@ function Experience({ workHistory }) {
     return workHistory.map(job => {
       return (
         <Tab.Pane key={job.label} eventKey={job.label}>
-          <h3><span className="workPosition">{job.title}</span> at {job.company}</h3>
+          <h3>
+            <span className="workPosition">{job.title} </span>
+            <span className="workCompany">
+              <a
+                href={job.company_link}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                at {job.company}
+              </a>
+            </span>
+          </h3>
           <p className="workDates">{job.start_date} to {job.end_date}</p>
           {job.bullets.map((bullet, idx) => <p key={idx} >{bullet}</p>)}
         </Tab.Pane>

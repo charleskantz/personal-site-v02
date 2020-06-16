@@ -15,6 +15,7 @@
 const workHistory = [
   {
     company: "Livestack",
+    company_link: "https://livestack.video/",
     label: "livestack",
     role: "engineering",
     start_date: "May 2020",
@@ -28,6 +29,7 @@ const workHistory = [
   },
   {
     company: "Nuro",
+    company_link: "https://nuro.ai/",
     label: "nuro",
     role: "design",
     start_date: "August 2016",
@@ -42,6 +44,7 @@ const workHistory = [
   },
   {
     company: "Clearpath",
+    company_link: "https://clearpathrobotics.com/",
     label: "clearpath",
     role: "design",
     start_date: "December 2015",
@@ -55,6 +58,7 @@ const workHistory = [
   },
   {
     company: "Intuitive Surgical",
+    company_link: "https://intuitive.com/",
     label: "isi",
     role: "design",
     start_date: "February 2014",
@@ -90,7 +94,7 @@ const jobData = [
     img_link: "https://imgur.com/ZxuhIDV.jpg",
     img_align: "left",
     gh_link: "https://github.com/charleskantz/redux-microblog",
-    demo_link: "https://cocky-villani-ed165a.netlify.app/",
+    demo_link: "http://microblog.charleskantz.com",
     description: "A Medium-like blog where you can create posts, delete posts, leave comments, and delete comments. Uses Redux for state management and local caching of visited blog posts. The backend is a Node Express server."
   },
   {
@@ -112,7 +116,7 @@ const jobData = [
     img_link: "https://imgur.com/slvknIi.jpg",
     img_align: "center",
     gh_link: "https://github.com/charleskantz/jeopardy-game",
-    demo_link: "http://ck-jeopardy.surge.sh/",
+    demo_link: "https://jeopardy.charleskantz.com/",
     description: "A fun Jeopardy-like trivia game, and one of my first Javascript projects. Click on a question mark to reveal a question, then click again to see the answer. Hit the 'Restart' button to get new categories and questions."
   },
   {
@@ -125,6 +129,17 @@ const jobData = [
     gh_link: "https://github.com/charleskantz/Warbler",
     demo_link: "https://warblers-be-warbling.herokuapp.com/",
     description: "A Twitter-like social media experience built on a static page server. Uses Bcrypt for authentication and SQLAlchemy for database management. Runs off a Flask server using Jinja for template-based page rendering."
+  },
+  {
+    featured: false,
+    title: "Personal Website v02",
+    company: "Personal",
+    tech: ["Javascript", "React", "Sass", "Bootstrap"],
+    img_link: "",
+    img_align: "center",
+    gh_link: "https://github.com/charleskantz/personal-site-v02",
+    demo_link: "https://charleskantz.com",
+    description: "My portfolio wesbite! This is my second version since switching to engineering. Built on React to be a single page experience and deployed on Netlify. "
   },
 ];
 
