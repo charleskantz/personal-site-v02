@@ -173,6 +173,7 @@ li {
   @extend codeFont;
   color: $primaryColor;
   font-weight: 700;
+  margin-top: auto !important;
   // project demo and GH links
   .iconLinks {
     margin-right: 2px;

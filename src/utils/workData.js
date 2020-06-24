@@ -104,8 +104,8 @@ const jobData = [
     tech: ["Javascript", "React"],
     img_link: "",
     img_align: "center",
-    gh_link: "https://github.com/charleskantz/jeopardy-game",
-    demo_link: "http://ck-jeopardy.surge.sh/",
+    gh_link: "https://github.com/charleskantz/rap-libs",
+    demo_link: "https://raplibs.charleskantz.com/",
     description: "Rap Libs is like a mad lib, but it's for a rap song. A simple React-based app where you submit words for a mad lib and see your selected song with your words."
   },
   {
