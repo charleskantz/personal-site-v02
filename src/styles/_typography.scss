@@ -208,6 +208,17 @@ li {
   }
 }
 
+#experience .projectDesignBanner {
+  .fa-primary {
+    color: $tertiaryColor;
+    opacity: 1;
+  }
+  .fa-secondary {
+    color: $secondaryColor;
+    opacity: .5;
+  }
+}
+
 .contactSocials {
   a {
     margin: .5rem;

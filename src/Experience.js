@@ -7,6 +7,8 @@ import {
   Nav
 } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
+import CtaBanner from './CtaBanner.js';
+import resume from './images/ckantz_eng_resume_2020.pdf';
 
 function Experience({ workHistory }) {
 
@@ -66,6 +68,12 @@ function Experience({ workHistory }) {
       <div>
         <h1 className="text-center mb-4" >Work Experience</h1>
         <div className="aboutRule mx-auto mt-3 mb-5"></div>
+        <CtaBanner
+          cta="grab my resume here!"
+          link={["Download PDF", resume]}
+          icon={['fad','file-alt']}
+          swapOpacity
+        />
         <Fade bottom>
           <div className="workContainer col-md-10 offset-md-1 col-sm-12">
             <Tab.Container id="left-tabs-example" defaultActiveKey="livestack">

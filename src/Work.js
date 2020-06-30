@@ -1,7 +1,7 @@
 import React from 'react';
 import WorkFeaturedList from './WorkFeaturedList.js';
 import WorkProjectList from './WorkProjectList.js';
-import DesignCtaBanner from './DesignCtaBanner.js';
+import CtaBanner from './CtaBanner.js';
 import Fade from 'react-reveal/Fade';
 
 function Work({ jobData }) {
@@ -22,7 +22,11 @@ function Work({ jobData }) {
           <WorkProjectList jobData={normalList} />
         </Fade>
         <Fade bottom>
-          <DesignCtaBanner />
+          <CtaBanner
+            cta="check out my design portfolio at"
+            link={[ "design.charleskantz.com", "https://design.charleskantz.com" ]}
+            icon={[ 'fad', 'pencil-ruler' ]}
+          />
         </Fade>
       </>
     )

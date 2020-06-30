@@ -1,20 +1,20 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function DesignCtaBanner() {
+function CtaBanner({cta, link, icon}) {
   return (
     <div className="projectDesignBanner col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4 mt-4">
 
-        <FontAwesomeIcon icon={['fad', 'pencil-ruler']} size="2x"/>
+        <FontAwesomeIcon icon={icon} size="2x"/>
         <div>
-          <span className="h6">Check out my design portfolio at</span><br />
+          <span className="h6">{cta}</span><br />
           <span className="projectDesignLink">
             <a
               rel="noopener noreferrer"
               target="_blank"
-              href="https://design.charleskantz.com"
+              href={link[1]}
             >
-                design.charleskantz.com
+                {link[0]}
             </a>
           </span>
         </div>
@@ -23,4 +23,4 @@ function DesignCtaBanner() {
   )
 }
 
-export default DesignCtaBanner;
+export default CtaBanner;
