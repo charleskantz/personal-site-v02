@@ -22,9 +22,11 @@ const workHistory = [
     end_date: "June 2020",
     title: "Fullstack Engineer",
     bullets: [
-      "Worked on small team to revamp React-based MVP by implementing new user workflows and refining key touchpoints",
-      "Revamped form for requesting an event by implementing conditional validation on both front-end and enforcing schema requirements on back-end developed custom date picking component to give user more flexibility when selecting dates",
-      "Refined key touchpoints by designing and implementing updated visual styling and responsive layouts for components, giving the end-to-end experience a more polished and professional look"
+      "Livestack provides creators and influencers a platform for hosting paid live streaming events.",
+      "Revamped React-based MVP by implementing new user workflows and refining key touchpoints.",
+      "Revamped form for requesting an event by implementing conditional validation on the front-end and enforcing schema requirements on the back-end.",
+      "Developed custom date picking component to give users more flexibility when selecting dates.",
+      "Refined key touchpoints by designing and implementing updated visual styling and responsive layouts for components, giving the end-to-end experience a more polished and professional look."
     ]
   },
   {
@@ -36,10 +38,10 @@ const workHistory = [
     end_date: "August 2019",
     title: "Visual Designer",
     bullets: [
-      "Oversaw and executed design efforts across the company including branding, web, hardware and software UX design, photography, video, and mobile/VR prototyping",
-      "Planned and developed virtual reality prototype of first product with Unity and C#, designed full end-to-end delivery experience to facilitate investment and partner discussions",
-      "Designed touchpad interaction on vehicle for users to easily identify themselves and retrieve their items",
-      "Regularly partnered with software engineers to implement user-friendly interfaces for proprietary displays, internal tools, and prototype apps to facilitate partner discussions and company operations"
+      "Oversaw and executed design efforts across the company including branding, web, hardware/software UX design, photography, video, and mobile/VR prototyping.",
+      "Planned and developed virtual reality prototype of first product with Unity and C#, designed the full end-to-end delivery experience to facilitate investment and partner discussions.",
+      "Designed touchpad interaction on vehicle for users to quickly identify themselves and retrieve their items.",
+      "Regularly partnered with software engineers to implement user-friendly interfaces for proprietary displays, internal tools, and prototype apps to facilitate partner discussions and company operations."
     ]
   },
   {
@@ -52,8 +54,8 @@ const workHistory = [
     title: "Art Director",
     bullets: [
       "Initiated and developed new branding identity for new division OTTO Motors and revamped logo for Clearpath Robotics, oversaw company transition to new branding",
-      "Directed the design and execution of new OTTO Motors website",
-      "Explored and authored design guidelines for a new dashboard user-interface design"
+      "Directed the design and execution of the new OTTO Motors website for division launch.",
+      "Explored and authored design guidelines for a new dashboard user-interface design."
     ]
   },
   {
@@ -65,10 +67,10 @@ const workHistory = [
     end_date: "December 2015",
     title: "Senior Visual Designer",
     bullets: [
-      "Designed and tested new visual status indicators for da Vinci Sp Surgical System, oversaw implementation into final product",
-      "Initiated and designed new interactive reference guide to reduce setup time and errors during surgery",
-      "Headed and executed UI visual design updates for da Vinci Xi Surgical System",
-      "Explored and composed product brand guidelines for da Vinci Xi Surgical System, and produced collateral for product launch"
+      "Designed and tested new visual status indicators for da Vinci Sp Surgical System, oversaw implementation into final product.",
+      "Initiated and designed a new interactive reference guide, reducing setup time and errors during surgery.",
+      "Executed UI visual design updates for da Vinci Xi Surgical System.",
+      "Explored and composed product brand guidelines for da Vinci Xi Surgical System, and produced collateral for product launch."
     ]
   }
 

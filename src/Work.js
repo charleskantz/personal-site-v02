@@ -23,7 +23,7 @@ function Work({ jobData }) {
         </Fade>
         <Fade bottom>
           <CtaBanner
-            cta="check out my design portfolio at"
+            cta="check out my design portfolio:"
             link={[ "design.charleskantz.com", "https://design.charleskantz.com" ]}
             icon={[ 'fad', 'pencil-ruler' ]}
           />

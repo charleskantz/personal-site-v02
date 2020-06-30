@@ -69,7 +69,7 @@ function Experience({ workHistory }) {
         <h1 className="text-center mb-4" >Work Experience</h1>
         <div className="aboutRule mx-auto mt-3 mb-5"></div>
         <CtaBanner
-          cta="grab my resume here!"
+          cta="Check out my resume!"
           link={["Download PDF", resume]}
           icon={['fad','file-alt']}
           swapOpacity
@@ -100,19 +100,19 @@ function Experience({ workHistory }) {
             <Col md={6} lg={3} className="workSkillsTech">
               <p><strong>Technical</strong></p>
               <p>
-                Javascript (ES6), Python, HTML, CSS/Sass, React, Node, Express, Flask, PostgreSQL, jQuery, Unity
+                Javascript (ES6), Python, HTML, CSS/Sass, React, Redux, Node, Express, Flask, PostgreSQL, jQuery
               </p>
             </Col>
             <Col md={6} lg={3} className="workSkillsDesign">
             <p><strong>Design</strong></p>
               <p>
-                Branding, art direction, user experience, web design, print design, UI design
+                Branding, art direction, user experience, web design, print design, UI design, photography, video
               </p>
             </Col>
             <Col md={6} lg={3} className="workSkillsTools">
             <p><strong>Tools</strong></p>
               <p>
-                Photoshop, Illustrator, InDesign, Sketch, After Effects, Lightroom, Premiere, Invision, Figma
+                Insomnia, Postico, Photoshop, Illustrator, InDesign, After Effects, Lightroom, Premiere, Sketch, Invision, Figma
               </p>
             </Col>
           </Row>
