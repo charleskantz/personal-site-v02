@@ -1,6 +1,9 @@
 import React from 'react';
 import Container from './Container.js';
 import Navigation from './Navigation.js';
+import AOS from 'aos';
+
+// Font Awesome 5 Pro loading
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faPencilRuler, faExternalLinkAlt, faCodeBranch, faFileAlt } from '@fortawesome/pro-duotone-svg-icons';
 import { faGithub, faInstagram, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
@@ -15,7 +18,18 @@ library.add(
   faTwitter,
   faLinkedinIn,
   faFileAlt,
-  faEnvelope);
+  faEnvelope
+);
+
+// Animate On Scroll init
+AOS.init({
+  offset: 200,
+  duration: 500,
+  easing: 'ease-out-quart',
+  delay: 100,
+  startEvent: 'load'
+});
+
 
 function App() {
   return (

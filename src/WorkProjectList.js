@@ -1,6 +1,5 @@
 import React from 'react';
 import WorkProjectItem from './WorkProjectItem.js';
-import Fade from 'react-reveal/Fade';
 
 function WorkProjectList({ jobData }) {
 
@@ -20,11 +19,9 @@ function WorkProjectList({ jobData }) {
   }
 
   return (
-    <Fade bottom>
       <div className="projectListContainer">
           {generateFeatured(jobData)}
       </div>
-    </Fade>
   )
 }
 

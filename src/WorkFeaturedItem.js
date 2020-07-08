@@ -5,8 +5,12 @@ import ProjectIcons from './ProjectIcons.js';
 
 function WorkFeaturedItem({ title, company, img_link, img_align, description, tech, gh_link, demo_link }) {
 
+
   return (
-    <Card className="projectContainer col-12">
+    <Card
+      className="projectContainer col-12"
+      data-aos="fade-up"
+    >
       <Row>
         <Col md={12} lg={5}>
           <a rel="noopener noreferrer" href={demo_link} target="_blank" ><div

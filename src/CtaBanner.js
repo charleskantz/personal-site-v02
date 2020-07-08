@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function CtaBanner({cta, link, icon}) {
   return (
-    <div className="projectDesignBanner col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4 mt-4">
+    <div data-aos="zoom-out" className="projectDesignBanner col-10 offset-1 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4 mt-4">
 
         <FontAwesomeIcon icon={icon} size="2x"/>
         <div>

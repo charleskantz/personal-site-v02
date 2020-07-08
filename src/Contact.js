@@ -2,30 +2,26 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import waveEmoji from './images/wave.png';
 import { Image } from 'react-bootstrap';
-import Fade from 'react-reveal/Fade';
 
 function Contact() {
   return (
     <div id="contact" className="sectionContainer text-center">
       <div>
         <h1>Get in Touch</h1>
-        <Fade bottom>
           <div className="aboutRule mx-auto mt-3 mb-5"></div>
-          <h5>For professional inquiries, please email me!</h5>
+          <h5 data-aos="fade-up">For professional inquiries, please email me!</h5>
           <a
             rel="noopener noreferrer"
             target="_blank"
             href="mailto:kantz.charles@gmail.com"
           >
-            <button className="mt-3 emailBtn">
+            <button className="mt-3 emailBtn" data-aos="fade-up">
               <FontAwesomeIcon icon={["far", "envelope"]} size="1x" />
               kantz.charles@gmail.com
             </button>
           </a>
-        </Fade>
-        <Fade bottom>
-          <h5>Reach out on social media if you want to say hello!</h5>
-          <div className="contactSocials">
+          <h5 data-aos="fade-up">Reach out on social media if you want to say hello!</h5>
+          <div data-aos="fade-up" className="contactSocials">
             <a rel="noopener noreferrer" target="_blank" href="https://github.com/charleskantz">
               <FontAwesomeIcon icon={['fab', 'github']} size="2x"/>
             </a>
@@ -39,7 +35,6 @@ function Contact() {
               <FontAwesomeIcon icon={['fab', 'instagram']} size="2x"/>
             </a>
           </div>
-        </Fade>
         <Image src={waveEmoji} />
       </div>
     </div>

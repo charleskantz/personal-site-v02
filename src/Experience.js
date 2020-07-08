@@ -6,7 +6,6 @@ import {
   Tab,
   Nav
 } from 'react-bootstrap';
-import Fade from 'react-reveal/Fade';
 import CtaBanner from './CtaBanner.js';
 import resume from './images/ckantz_eng_resume_2020.pdf';
 
@@ -74,8 +73,7 @@ function Experience({ workHistory }) {
           icon={['fad','file-alt']}
           swapOpacity
         />
-        <Fade bottom>
-          <div className="workContainer col-md-10 offset-md-1 col-sm-12">
+          <div data-aos="fade-up" className="workContainer col-md-10 offset-md-1 col-sm-12">
             <Tab.Container id="left-tabs-example" defaultActiveKey="livestack">
               <Row className="mx-2">
                 <Col sm={12} md={12} lg={{span: 3, offset: 0}} className="mb-4" >
@@ -91,9 +89,7 @@ function Experience({ workHistory }) {
               </Row>
             </Tab.Container>
           </div>
-        </Fade>
-        <Fade bottom>
-          <Row className="col-10 offset-1 workSkills justify-content-center">
+          <Row data-aos="fade-up" className="col-10 offset-1 workSkills justify-content-center">
             <Col md={6} lg={3}>
               <h2>Skills</h2>
             </Col>
@@ -116,7 +112,6 @@ function Experience({ workHistory }) {
               </p>
             </Col>
           </Row>
-        </Fade>
       </div>
 
     </Container>
