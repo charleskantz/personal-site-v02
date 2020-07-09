@@ -29,7 +29,6 @@ function Navigation() {
           >
             Charles Kantz
           </Link>
-          {/* <Navbar.Brand href="#home">Charles Kantz</Navbar.Brand> */}
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto">

@@ -17,12 +17,12 @@ function About() {
           lg={{ span: 4, offset: 1 }}
           className="mb-4"
         >
-          <Image data-aos="fade-right" src={selfie} fluid rounded className="aboutImage"/>
+          <Image data-aos="fade-up" src={selfie} fluid rounded className="aboutImage"/>
         </Col>
 
         <Col md={7} lg={6} >
-          <h2 data-aos="fade-down">About Charles</h2>
-          <div data-aos="fade-left" className="aboutRule"></div>
+          <h2 data-aos="fade-up">About Charles</h2>
+          <div data-aos="fade" className="aboutRule"></div>
           <div data-aos="fade-up">
             <p>
               As a former designer of 12 years I have occasionally dipped
