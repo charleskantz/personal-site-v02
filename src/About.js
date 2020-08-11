@@ -25,13 +25,26 @@ function About() {
           <div data-aos="fade" className="aboutRule"></div>
           <div data-aos="fade-up">
             <p>
-              As a former designer of 12 years I have occasionally dipped
-              my toes into coding for my projects. It wasn't until designing
-              and implementing a fully working VR experience that I realized
-              how much I enjoyed software development, even more than design.
-              I took that as a sign and left my job to pursue this new love.
-              I enrolled in the Rithm School where I honed my developer skills
-              and completed my transition to web development!
+              My name is Charles Kantz, and I am a recent graduate of the Rithm School,
+              where I learned full-stack engineering and led large scale coding projects
+              on the front and back end. For the last 7 years, I was a visual designer
+              and art director for Silicon Valley companies like Intuitive Surgical and Nuro,
+              where I led branding and user experience efforts.
+            </p>
+            <p>
+              As a designer, I loved to solve visual problems. Over the years, I found myself
+              wanting more than what design was providing. I realized what I loved about my
+              work was solving the more technical challenges, as well as building and implementing designs.
+              I admired developers who took my specs and brought them to life, and I realized that I
+              wanted to explore doing just that.
+            </p>
+            <p>
+              I got my chance to try development when employed at Nuro by creating a virtual reality
+              prototype for an unreleased product. I learned C# on my own, developed the experience
+              in Unity over three months, and loved every minute of the process. When it was complete,
+              I felt proud and satisfied with my work, which solidified my theory that software
+              engineering was the best path for me. I took this as a sign and attended Rithm School
+              to pursue this new venture.
             </p>
             <p>
               Outside of my career, I have spent most of my life in the Bay

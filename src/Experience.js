@@ -96,7 +96,7 @@ function Experience({ workHistory }) {
             <Col md={6} lg={3} className="workSkillsTech">
               <p><strong>Technical</strong></p>
               <p>
-                Javascript (ES6), Python, HTML, CSS/Sass, React, Redux, Node, Express, Flask, PostgreSQL, jQuery
+                Javascript (ES6), Python, HTML, CSS/Sass, React, Redux, Tailwind CSS, Styled-Components, Node, Express, Flask, PostgreSQL, jQuery
               </p>
             </Col>
             <Col md={6} lg={3} className="workSkillsDesign">
