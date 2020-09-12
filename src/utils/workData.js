@@ -90,6 +90,17 @@ const workHistory = [
 const jobData = [
   {
     featured: true,
+    title: "Jobly",
+    company: "Rithm School",
+    tech: ["Javascript", "React", "Emotion/styled", "Express"],
+    img_link: "https://imgur.com/7303e1O.jpg",
+    img_align: "center",
+    gh_link: "https://github.com/charleskantz/react-jobly",
+    demo_link: "https://jobly.charleskantz.com",
+    description: "A fullstack Javascript job hunting app built with React, Node/Express, and PostgreSQL. Jobly allows users to sign up or login, browse and apply for posted jobs and search them by position, browse and search hiring companies by name, and view the jobs posted by each company. It also allows users to edit their profile info. Finally, the authentication and authorization middleware protects certain routes so that only the right logged in users can view certain pages."
+  },
+  {
+    featured: true,
     title: "Average Blog",
     company: "Rithm School",
     tech: ["Javascript", "React", "Redux", "Express"],
