@@ -1,7 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import waveEmoji from './images/wave.png';
-import { Image } from 'react-bootstrap';
+import waveEmojiWebP from './images/wave.webp';
+import ImgWithFallback from './ImgWithFallback';
 
 function Contact() {
   return (
@@ -35,7 +36,7 @@ function Contact() {
               <FontAwesomeIcon icon={['fab', 'instagram']} size="2x"/>
             </a>
           </div>
-        <Image src={waveEmoji} />
+        <ImgWithFallback src={waveEmojiWebP} fallback={waveEmoji} alt="waving hand icon" />
       </div>
     </div>
   )
