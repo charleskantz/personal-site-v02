@@ -1,18 +1,8 @@
 @import './colors.scss';
 
-// Adobe
-// @import url("https://use.typekit.net/uzb7khd.css");
-
-// // Source Code Bold
-// @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap');
-// // Source Code Regular
-// @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap');
 codeFont {
-  font-family: 'input-mono', monospace;
+  font-family: 'Source Code Pro', monospace;
   font-style: normal;
   font-weight: 400;
   color: white;
