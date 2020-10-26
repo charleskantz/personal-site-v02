@@ -1,11 +1,12 @@
 import React from 'react';
 import selfie from './images/ckantz_portrait_sm.jpg';
+import selfieWebP from './images/ckantz_portrait_sm.webp';
 import {
   Container,
   Row,
-  Col,
-  Image
+  Col
 } from 'react-bootstrap';
+import ImgWithFallback from './ImgWithFallback';
 
 function About() {
   return (
@@ -17,7 +18,13 @@ function About() {
           lg={{ span: 4, offset: 1 }}
           className="mb-4"
         >
-          <Image data-aos="fade-up" src={selfie} fluid rounded className="aboutImage"/>
+          <ImgWithFallback
+            data-aos="fade-up"
+            className="aboutImage"
+            src={selfieWebP}
+            fallback={selfie}
+            alt="portrait of Charles Kantz"
+          />
         </Col>
 
         <Col md={7} lg={6} >
