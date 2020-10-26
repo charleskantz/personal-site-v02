@@ -2,8 +2,9 @@ import React from 'react';
 import { Card, Row, Col } from 'react-bootstrap';
 import generateTechTags from './utils/generateTechTags.js';
 import ProjectIcons from './ProjectIcons.js';
+import ImgWithFallback from './ImgWithFallback';
 
-function WorkFeaturedItem({ title, company, img_link, img_align, description, tech, gh_link, demo_link }) {
+function WorkFeaturedItem({ title, img_link, fallback, description, tech, gh_link, demo_link }) {
 
 
   return (
@@ -13,10 +14,14 @@ function WorkFeaturedItem({ title, company, img_link, img_align, description, te
     >
       <Row>
         <Col md={12} lg={5}>
-          <a rel="noopener noreferrer" href={demo_link} target="_blank" ><div
-            className="projectImage"
-            style={{ backgroundImage: `url(${img_link})`, backgroundPosition: img_align }}
-          ></div></a>
+          <a rel="noopener noreferrer" href={demo_link} target="_blank">
+            <ImgWithFallback
+              src={img_link}
+              fallback={fallback}
+              alt={`${title} thumbnail`}
+              className="projectImage"
+            />
+          </a>
         </Col>
         <Col md={12} lg={7} className="projectDetails">
           <div>

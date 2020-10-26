@@ -10,6 +10,7 @@ function WorkFeaturedList({ jobData }) {
           title={project.title}
           company={project.company}
           img_link={project.img_link}
+          fallback={project.fallback}
           img_align={project.img_align}
           description={project.description}
           tech={project.tech}

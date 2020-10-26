@@ -77,17 +77,11 @@ $cardColor: #2C3140;
 
 .projectImage {
   height: 300px;
-  background-position: left;
-  background-size: cover;
-  background-color: $secondaryColor;
+  width: 100%;
   border: 3px solid $secondaryColor;
   border-radius: .25rem;
-
-  &:hover {
-    background-color: lighten($color: $bgColor, $amount: 35%);
-    background-blend-mode: overlay;
-
-  }
+  object-fit: cover;
+  position: relative;
 }
 
 /* ~~ Work / Skills ~~ */

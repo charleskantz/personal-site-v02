@@ -1,3 +1,10 @@
+import jobly from '../images/jobly.jpg';
+import joblyWebP from '../images/jobly.webp';
+import blog from '../images/blog.jpg';
+import blogWebP from '../images/blog.webp';
+import warbler from '../images/warbler.jpg';
+import warblerWebP from '../images/warbler.webp';
+
 // let singleWorkHistory = {
 //   company: "",
 //   label: "",
@@ -93,7 +100,8 @@ const jobData = [
     title: "Jobly",
     company: "Rithm School",
     tech: ["Javascript", "React", "Emotion/styled", "Express"],
-    img_link: "https://imgur.com/7303e1O.jpg",
+    img_link: joblyWebP,
+    fallback: jobly,
     img_align: "center",
     gh_link: "https://github.com/charleskantz/react-jobly",
     demo_link: "https://jobly.charleskantz.com",
@@ -104,7 +112,8 @@ const jobData = [
     title: "Average Blog",
     company: "Rithm School",
     tech: ["Javascript", "React", "Redux", "Express"],
-    img_link: "https://imgur.com/ZxuhIDV.jpg",
+    img_link: blogWebP,
+    fallback: blog,
     img_align: "left",
     gh_link: "https://github.com/charleskantz/redux-microblog",
     demo_link: "http://microblog.charleskantz.com",
@@ -115,7 +124,8 @@ const jobData = [
     title: "Warbler",
     company: "Rithm School",
     tech: ["Python", "Flask", "Jinja", "Bcrypt", "SQLAlchemy"],
-    img_link: "https://imgur.com/OlFoqmQ.jpg",
+    img_link: warblerWebP,
+    fallback: warbler,
     img_align: "center",
     gh_link: "https://github.com/charleskantz/Warbler",
     demo_link: "https://warblers-be-warbling.herokuapp.com/",
