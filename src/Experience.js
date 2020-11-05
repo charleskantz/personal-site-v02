@@ -7,7 +7,7 @@ import {
   Nav
 } from 'react-bootstrap';
 import CtaBanner from './CtaBanner.js';
-import resume from './images/ckantz_eng_resume_2020.pdf';
+import resume from './images/charleskantz_eng_resume_2020.pdf';
 
 function Experience({ workHistory }) {
 
