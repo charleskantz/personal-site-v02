@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-    name="Charles Kantz | Web Developer"
-    content="Charles Kantz: Web Developer, Visual Designer, International Pizza Consultant"
-    />
-    <meta name="Description" content="Charles Kantz is a San Francisco-based web developer with 10+ years experience in visual design. Expert in Javascript, React, CSS, HTML, UI/UX, and visual design.">
-    <meta http-equiv="Content-Security-Policy" content="">
 
-    <!-- Animate on Scroll loads -->
-    <link rel="stylesheet" href="%PUBLIC_URL%/aos/aos.css" media="screen and (min-device-width: 500px)"/>
-    <script src="%PUBLIC_URL%/aos/aos.js"></script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="Charles Kantz | Web Developer"
+    content="Charles Kantz: Web Developer, Visual Designer, International Pizza Consultant" />
+  <meta name="Description"
+    content="Charles Kantz is a San Francisco-based web developer with 10+ years experience in visual design. Expert in Javascript, React, CSS, HTML, UI/UX, and visual design.">
+  <meta http-equiv="Content-Security-Policy" content="">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
-    <!--
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PJQ87VS');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Animate on Scroll loads -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/aos/aos.css" media="screen and (min-device-width: 500px)" />
+  <script src="%PUBLIC_URL%/aos/aos.js"></script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/favicon-16x16.png" />
+  <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -33,12 +44,27 @@
       Learn how to configure af non-root public URL by running `npm run build`.
     -->
 
-    <title>Charles Kantz | Web Developer, Visual Designer, Pizza Consultant</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
+  <title>Charles Kantz | Web Developer, Visual Designer, Pizza Consultant</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-182907903-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-182907903-1');
+  </script>
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJQ87VS" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -48,5 +74,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>
