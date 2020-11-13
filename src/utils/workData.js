@@ -98,6 +98,7 @@ const jobData = [
   {
     featured: true,
     title: "Jobly",
+    label: "jobly",
     company: "Rithm School",
     tech: ["Javascript", "React", "Emotion/styled", "Express"],
     img_link: joblyWebP,
@@ -110,6 +111,7 @@ const jobData = [
   {
     featured: true,
     title: "Average Blog",
+    label: "microblog",
     company: "Rithm School",
     tech: ["Javascript", "React", "Redux", "Express"],
     img_link: blogWebP,
@@ -122,6 +124,7 @@ const jobData = [
   {
     featured: true,
     title: "Warbler",
+    label: "warbler",
     company: "Rithm School",
     tech: ["Python", "Flask", "Jinja", "Bcrypt", "SQLAlchemy"],
     img_link: warblerWebP,
@@ -134,6 +137,7 @@ const jobData = [
   {
     featured: false,
     title: "Jeopardy",
+    label: "jeopardy",
     company: "Rithm School",
     tech: ["Javascript", "jQuery"],
     img_link: "https://imgur.com/slvknIi.jpg",
@@ -145,6 +149,7 @@ const jobData = [
   {
     featured: false,
     title: "Rap Libs",
+    label: "raplibs",
     company: "Rithm School",
     tech: ["Javascript", "React"],
     img_link: "",
@@ -156,6 +161,7 @@ const jobData = [
   {
     featured: false,
     title: "Personal Website v02",
+    label: "personalsite02",
     company: "Personal",
     tech: ["Javascript", "React", "Sass", "Bootstrap"],
     img_link: "",

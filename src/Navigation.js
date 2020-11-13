@@ -21,6 +21,7 @@ function Navigation() {
         <Container>
           <Link
             className="navbar-brand"
+            id="nav-logo"
             delay={DELAY}
             smooth={SMOOTH}
             duration={DURATION}
@@ -35,6 +36,7 @@ function Navigation() {
               <NavItem>
                 <Link
                   className="nav-link"
+                  id="nav-about"
                   delay={DELAY}
                   smooth={SMOOTH}
                   duration={DURATION}
@@ -47,6 +49,7 @@ function Navigation() {
               <NavItem>
                 <Link
                   className="nav-link"
+                  id="nav-experience"
                   delay={DELAY}
                   smooth={SMOOTH}
                   duration={DURATION}
@@ -59,6 +62,7 @@ function Navigation() {
               <NavItem>
                 <Link
                   className="nav-link"
+                  id="nav-work"
                   delay={DELAY}
                   smooth={SMOOTH}
                   duration={DURATION}
@@ -71,6 +75,7 @@ function Navigation() {
               <NavItem>
                 <Link
                   className="nav-link btn btn-outline-primary ml-2"
+                  id="nav-contact"
                   delay={DELAY}
                   smooth={SMOOTH}
                   duration={DURATION}

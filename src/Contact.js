@@ -13,6 +13,7 @@ function Contact() {
           <h5 data-aos="fade-up">For professional inquiries, please email me!</h5>
           <a
             rel="noopener noreferrer"
+            id='out-email'
             target="_blank"
             href="mailto:kantz.charles@gmail.com"
           >
@@ -23,16 +24,16 @@ function Contact() {
           </a>
           <h5 data-aos="fade-up">Reach out on social media if you want to say hello!</h5>
           <div data-aos="fade-up" className="contactSocials">
-            <a rel="noopener noreferrer" target="_blank" href="https://github.com/charleskantz">
+            <a rel="noopener noreferrer" id='sm-out-github' target="_blank" href="https://github.com/charleskantz">
               <FontAwesomeIcon icon={['fab', 'github']} size="2x"/>
             </a>
-            <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/charleskantz">
+            <a rel="noopener noreferrer" id='sm-out-linkedin' target="_blank" href="https://www.linkedin.com/in/charleskantz">
               <FontAwesomeIcon icon={['fab', 'linkedin-in']} size="2x"/>
             </a>
-            <a rel="noopener noreferrer" target="_blank" href="https://twitter.com/charleskantz">
+            <a rel="noopener noreferrer" id='sm-out-twitter' target="_blank" href="https://twitter.com/charleskantz">
               <FontAwesomeIcon icon={['fab', 'twitter']} size="2x"/>
             </a>
-            <a rel="noopener noreferrer" target="_blank" href="https://instagram.com/charleskantz">
+            <a rel="noopener noreferrer" id='sm-out-instagram' target="_blank" href="https://instagram.com/charleskantz">
               <FontAwesomeIcon icon={['fab', 'instagram']} size="2x"/>
             </a>
           </div>

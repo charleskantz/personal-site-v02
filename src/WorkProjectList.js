@@ -14,6 +14,7 @@ function WorkProjectList({ jobData }) {
           tech={project.tech}
           gh_link={project.gh_link}
           demo_link={project.demo_link}
+          label={project.label}
         />
     ));
   }

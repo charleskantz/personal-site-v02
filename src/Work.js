@@ -22,6 +22,7 @@ function Work({ jobData }) {
             cta="check out my design portfolio:"
             link={[ "design.charleskantz.com", "https://design.charleskantz.com" ]}
             icon={[ 'fad', 'pencil-ruler' ]}
+            label='out-design-portfolio'
           />
       </>
     )

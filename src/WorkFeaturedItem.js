@@ -4,7 +4,7 @@ import generateTechTags from './utils/generateTechTags.js';
 import ProjectIcons from './ProjectIcons.js';
 import ImgWithFallback from './ImgWithFallback';
 
-function WorkFeaturedItem({ title, img_link, fallback, description, tech, gh_link, demo_link }) {
+function WorkFeaturedItem({ title, label, img_link, fallback, description, tech, gh_link, demo_link }) {
 
 
   return (
@@ -14,7 +14,7 @@ function WorkFeaturedItem({ title, img_link, fallback, description, tech, gh_lin
     >
       <Row>
         <Col md={12} lg={5}>
-          <a rel="noopener noreferrer" href={demo_link} target="_blank">
+          <a rel="noopener noreferrer" id={`p-img-${label}`} href={demo_link} target="_blank">
             <ImgWithFallback
               src={img_link}
               fallback={fallback}
@@ -29,7 +29,7 @@ function WorkFeaturedItem({ title, img_link, fallback, description, tech, gh_lin
             <h2>{title}</h2>
             <p className="projectTech">{generateTechTags(tech, title)}</p>
             <p>{description}</p>
-            <ProjectIcons github={gh_link} demo={demo_link} />
+            <ProjectIcons label={label} github={gh_link} demo={demo_link} />
           </div>
         </Col>
       </Row>

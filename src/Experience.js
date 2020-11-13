@@ -48,6 +48,7 @@ function Experience({ workHistory }) {
             <span className="workCompany">
               <a
                 href={job.company_link}
+                id={`out-${job.label}`}
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -71,6 +72,7 @@ function Experience({ workHistory }) {
           cta="Check out my resume!"
           link={["Download PDF", resume]}
           icon={['fad','file-alt']}
+          label='out-resume'
           swapOpacity
         />
           <div data-aos="fade-up" className="workContainer col-md-10 offset-md-1 col-sm-12">
