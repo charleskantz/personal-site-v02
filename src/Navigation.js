@@ -30,7 +30,7 @@ function Navigation() {
           >
             Charles Kantz
           </Link>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Toggle id="nav-toggle" aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ml-auto">
               <NavItem>
