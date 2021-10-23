@@ -235,3 +235,12 @@ li {
     color: $primaryColor;
   }
 }
+
+a {
+  text-decoration: none !important;
+  color: #eb6e64 !important;
+}
+
+a[role=tab].active {
+  background-color: #eb6e64 !important;
+}
